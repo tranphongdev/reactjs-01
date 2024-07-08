@@ -30,7 +30,7 @@ function Header(props) {
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
             <Typography variant="h6" sx={{ my: 2 }}>
-                <img src={MainLogo} alt="" css={[tw`w-[200px] cursor-pointer`]} />
+                <img src={MainLogo} alt="" css={[tw`w-[160px] cursor-pointer`]} />
             </Typography>
             <Divider />
             <List>
@@ -52,7 +52,7 @@ function Header(props) {
                 component="nav"
                 sx={{
                     '.MuiToolbar-root': {
-                        width: '1188px',
+                        maxWidth: '1188px',
                         marginTop: '45px',
                     },
                 }}
@@ -114,11 +114,31 @@ function Header(props) {
                         keepMounted: true,
                     }}
                     sx={{
-                        display: { xs: 'block', md: 'none' },
+                        display: { xs: 'block', md: 'none', position: 'relative' },
                         '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
                     }}
                 >
                     {drawer}
+                    <Box
+                        onClick={handleDrawerToggle}
+                        sx={{
+                            position: 'absolute',
+                            right: '14px',
+                            border: '1px solid #FF64AE',
+                            top: '20px',
+                            color: '#FF64AE',
+                            fontSize: '13px',
+                            cursor: 'pointer',
+                            width: '30px',
+                            height: '30px',
+                            textAlign: 'center',
+                            lineHeight: '30px',
+                            ':hover': { bgcolor: ' #FF64AE', color: '#fff' },
+                            borderRadius: '4px',
+                        }}
+                    >
+                        X
+                    </Box>
                 </Drawer>
             </nav>
         </BoxCustom>

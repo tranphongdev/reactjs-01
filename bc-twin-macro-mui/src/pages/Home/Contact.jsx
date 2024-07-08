@@ -15,10 +15,10 @@ function Contact() {
                     flexDirection: { xs: 'column', md: 'row' },
                 }}
             >
-                <Box sx={{ width: { xs: 'fit-content', md: '520px' } }}>
+                <Box sx={{ width: { xs: '100%', md: '520px' } }}>
                     <img src={ContactAnimations} alt="ContactAnimations" style={{ width: '100%', height: '100%' }} />
                 </Box>
-                <Box>
+                <Box sx={{ width: { xs: '100%', md: '520px' }, textAlign: { xs: 'center', md: 'start' } }}>
                     <h3 className="text-heading">Contact Us</h3>
                     <p className="text-title">
                         Send your inquiry to <br /> our expert team

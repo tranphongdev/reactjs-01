@@ -24,15 +24,15 @@ function About() {
                     </p>
                     <div css={[tw`flex items-center gap-[44px] mt-[49px]`]}>
                         <Button color="pink">Learn More</Button>
-                        <div css={[tw`flex items-center gap-3`]}>
+                        <div css={[tw`flex items-center gap-3 cursor-pointer`]}>
                             <img src={playButton} alt="" />
                             <span css={[tw`text-[#8B8B8B] font-medium`]}>Watch Video</span>
                         </div>
                     </div>
                 </BoxAboutContent>
 
-                <div css={[tw`w-full`]}>
-                    <img src={aboutBg} alt="" className="w-full" />
+                <div css={[tw`w-full flex justify-center`]}>
+                    <img src={aboutBg} alt="" className="min-w-full" />
                 </div>
             </BoxAbout>
         </BoxContainer>

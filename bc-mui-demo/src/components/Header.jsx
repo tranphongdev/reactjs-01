@@ -32,7 +32,7 @@ function Header(props) {
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
             <Typography variant="h6" sx={{ my: 2 }}>
-                <img src={MainLogo} alt="" style={{ width: '200px', cursor: 'pointer' }} />
+                <img src={MainLogo} alt="" style={{ width: '160px', cursor: 'pointer' }} />
             </Typography>
             <Divider />
             <List>
@@ -58,10 +58,10 @@ function Header(props) {
                     bgcolor: 'transparent',
                     boxShadow: 'none',
                     overflow: 'hidden',
-                    width: '1188px',
+                    maxWidth: '1188px',
                     margin: '0 auto',
                     '.MuiToolbar-root': {
-                        width: '1188px',
+                        maxWidth: '1188px',
                         marginTop: '45px',
                     },
                 }}
@@ -75,7 +75,7 @@ function Header(props) {
                             onClick={handleDrawerToggle}
                             sx={{
                                 ml: 2,
-                                display: { lg: 'none' },
+                                display: { md: 'none' },
                                 border: '1px solid #FF64AE',
                                 borderRadius: '4px',
                                 overflow: 'hidden',
@@ -86,11 +86,11 @@ function Header(props) {
                         <Typography
                             variant="h6"
                             component="div"
-                            sx={{ flexGrow: 1, display: { xs: 'none', lg: 'block' }, width: '258px', height: '63px' }}
+                            sx={{ flexGrow: 1, display: { xs: 'none', md: 'block' }, width: '258px', height: '63px' }}
                         >
                             <img src={MainLogo} alt="" style={{ width: '258px', height: '63px', cursor: 'pointer' }} />
                         </Typography>
-                        <Box sx={{ display: { xs: 'none', lg: 'flex' }, gap: '45px' }}>
+                        <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: '45px' }}>
                             {navItems.map((item, index) => (
                                 <Box key={index}>
                                     {index === 0 ? (
@@ -116,8 +116,8 @@ function Header(props) {
                                 color: 'white',
                                 p: '14px 41px',
                                 ':hover': { bgcolor: ' #e74d96' },
-                                ml: '140px',
-                                display: { xs: 'none', lg: 'flex' },
+                                ml: '40px',
+                                display: { xs: 'none', md: 'flex' },
                             }}
                         >
                             Contact
@@ -135,11 +135,31 @@ function Header(props) {
                         keepMounted: true,
                     }}
                     sx={{
-                        display: { xs: 'block', lg: 'none' },
+                        display: { xs: 'block', md: 'none', position: 'relative' },
                         '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
                     }}
                 >
                     {drawer}
+                    <Box
+                        onClick={handleDrawerToggle}
+                        sx={{
+                            position: 'absolute',
+                            right: '14px',
+                            border: '1px solid #FF64AE',
+                            top: '20px',
+                            color: '#FF64AE',
+                            fontSize: '13px',
+                            cursor: 'pointer',
+                            width: '30px',
+                            height: '30px',
+                            textAlign: 'center',
+                            lineHeight: '30px',
+                            ':hover': { bgcolor: ' #FF64AE', color: '#fff' },
+                            borderRadius: '4px',
+                        }}
+                    >
+                        X
+                    </Box>
                 </Drawer>
             </nav>
             {/* <Box component="main" sx={{ p: 3 }}>

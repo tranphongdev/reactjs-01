@@ -54,7 +54,7 @@ export const ButtonCustom = styled(Button)`
 `;
 
 export const BoxWatch = styled(Box)`
-    ${tw`flex items-center gap-[13px] text-[ #8b8b8b] font-semibold`}
+    ${tw`flex items-center gap-[13px] text-[ #8b8b8b] font-semibold cursor-pointer`}
 `;
 
 export const ProfessionalBox = styled(Box)`

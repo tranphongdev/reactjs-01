@@ -30,7 +30,7 @@ export const BoxAboutContent = styled.div`
 `;
 
 export const BoxUser = styled.div`
-    ${tw`flex lg:w-[424px] flex-col  items-center cursor-pointer px-[70px] h-[626px] hover:shadow-lg hover:bg-white hover:rounded-[42px]`}
+    ${tw`flex lg:w-[424px] w-full flex-col  items-center cursor-pointer px-[50px] h-[626px] hover:shadow-lg hover:bg-white hover:rounded-[42px]`}
 `;
 
 export const BoxContact = styled.div`

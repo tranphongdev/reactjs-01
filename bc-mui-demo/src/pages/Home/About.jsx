@@ -37,7 +37,14 @@ function About() {
                         Learn More
                     </Button>
                     <Box
-                        sx={{ display: 'flex', alignItems: 'center', gap: '13px', color: '#8B8B8B', fontWeight: '600' }}
+                        sx={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '13px',
+                            color: '#8B8B8B',
+                            fontWeight: '600',
+                            cursor: 'pointer',
+                        }}
                     >
                         <img src={playButton} alt="" />
                         <p>Watch Video</p>

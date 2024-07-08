@@ -7,11 +7,11 @@ function Contact() {
         <div className="contact">
             <div className="wrapper">
                 <div className="flex lg:flex-row flex-col justify-between items-center">
-                    <div>
-                        <img src={ContactAnimations} alt="" />
+                    <div className="lg:w-fit w-full">
+                        <img src={ContactAnimations} alt="" className="w-full" />
                     </div>
 
-                    <div>
+                    <div className="lg:w-fit w-full">
                         <div className="text-center lg:text-left">
                             <h4 className="text-heading">Contact Us</h4>
                             <p className="text-title">

@@ -14,13 +14,13 @@ function About() {
                 <Box sx={{ textAlign: { xs: 'center', md: 'start' } }}>
                     <p className="text-title">We are the best beauty clinic</p>
                 </Box>
-                <p className="text-desc" css={[tw`max-w-[483px]`]}>
+                <p className="text-desc" css={[tw`lg:max-w-[483px] xs:w-full`]}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit, quam suscipit purus donec amet.
                     Egestas volutpat facilisi eu libero. Nunc, ipsum ornare mauris sit quam quis enim. Varius tellus in
                     suspendisse placerat.
                 </p>
                 <br />
-                <p className="text-desc" css={[tw`max-w-[483px]`]}>
+                <p className="text-desc" css={[tw`lg:max-w-[483px] xs:w-full`]}>
                     Id dui erat sed quam tellus in purus. Pellentesque congue fringilla cras tellus enim.
                 </p>
                 <Box sx={{ display: 'flex', gap: '44px', mt: '49px' }}>
@@ -31,7 +31,7 @@ function About() {
                     </BoxWatch>
                 </Box>
             </Box>
-            <Box sx={{ minWidth: { xs: 'fit-content', md: '476px' }, height: '350px' }}>
+            <Box sx={{ minWidth: { xs: '100%', md: '476px' }, height: '350px' }}>
                 <img src={aboutBg} alt="" style={{ width: '100%', height: '100%' }} />
             </Box>
         </ContainerBox>

@@ -9,7 +9,7 @@ export const ContainerBox = styled(Box)`
 `;
 
 export const CustomAppBar = styled(AppBar)`
-    ${tw`static bg-transparent overflow-hidden shadow-none m-auto w-[1188px]`}
+    ${tw`static bg-transparent overflow-hidden shadow-none m-auto max-w-[1188px]`}
 `;
 
 export const BoxCustom = styled(Box)`
@@ -17,7 +17,7 @@ export const BoxCustom = styled(Box)`
 `;
 
 export const ButtonContact = styled(Button)`
-    ${tw`bg-[#ff64ae] text-white px-[41px] py-[14px] ml-[140px]`}
+    ${tw`bg-[#ff64ae] text-white px-[41px] py-[14px] ml-[40px]`}
 
     :hover {
         ${tw`bg-[#e74d96]`}

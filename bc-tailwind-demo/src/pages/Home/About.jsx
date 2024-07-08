@@ -19,7 +19,7 @@ function About() {
                     </p>
                     <div className="flex items-center gap-[44px] mt-[49px]">
                         <button className="btn py-4 px-10">Learn More</button>
-                        <div className="flex items-center gap-3">
+                        <div className="flex items-center gap-3 cursor-pointer">
                             <img src={playButton} alt="" />
                             <span className="text-[#8B8B8B] font-medium">Watch Video</span>
                         </div>

@@ -15,7 +15,7 @@ export const CustomAppBar = styled(AppBar)`
     overflow: hidden;
     box-shadow: none;
     margin: 0 auto;
-    width: 1188px;
+    max-width: 1188px;
 `;
 
 export const BoxCustom = styled(Box)`
@@ -27,7 +27,7 @@ export const ButtonContact = styled(Button)`
     background-color: #ff64ae;
     color: white;
     padding: 14px 41px;
-    margin-left: 140px;
+    margin-left: 40px;
 
     :hover {
         background-color: #e74d96;

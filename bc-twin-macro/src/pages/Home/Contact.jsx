@@ -10,11 +10,11 @@ function Contact() {
         <div className="contact">
             <BoxContainer>
                 <BoxContact>
-                    <div>
-                        <img src={ContactAnimations} alt="" />
+                    <div tw="w-full">
+                        <img src={ContactAnimations} alt="" tw="w-full" />
                     </div>
 
-                    <div>
+                    <div tw="w-full">
                         <div css={[tw`text-center lg:text-left`]}>
                             <h4 className="text-heading">Contact Us</h4>
                             <p className="text-title">

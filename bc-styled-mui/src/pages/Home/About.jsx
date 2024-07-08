@@ -19,7 +19,7 @@ function About() {
                 <p className="text-desc">
                     Id dui erat sed quam tellus in purus. Pellentesque congue fringilla cras tellus enim.
                 </p>
-                <Box sx={{ display: 'flex', gap: '44px' }}>
+                <Box sx={{ display: 'flex', gap: '44px', cursor: 'pointer' }}>
                     <ButtonCustom sx={{ ml: 0 }}>Learn More</ButtonCustom>
                     <BoxWatch>
                         <img src={playButton} alt="" />
