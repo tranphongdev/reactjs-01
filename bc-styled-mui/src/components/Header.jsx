@@ -66,7 +66,7 @@ function Header(props) {
                             onClick={handleDrawerToggle}
                             sx={{
                                 ml: 2,
-                                display: { md: 'none' },
+                                display: { lg: 'none' },
                                 border: '1px solid #FF64AE',
                                 borderRadius: '4px',
                             }}
@@ -76,11 +76,11 @@ function Header(props) {
                         <Typography
                             variant="h6"
                             component="div"
-                            sx={{ flexGrow: 1, display: { xs: 'none', md: 'block' }, width: '258px', height: '63px' }}
+                            sx={{ flexGrow: 1, display: { xs: 'none', lg: 'block' }, width: '258px', height: '63px' }}
                         >
                             <img src={MainLogo} alt="" style={{ width: '258px', height: '63px', cursor: 'pointer' }} />
                         </Typography>
-                        <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: '45px' }}>
+                        <Box sx={{ display: { xs: 'none', lg: 'flex' }, gap: '45px' }}>
                             {navItems.map((item, index) => (
                                 <Box key={index}>
                                     {index === 0 ? (
@@ -100,7 +100,7 @@ function Header(props) {
                                 </Box>
                             ))}
                         </Box>
-                        <ButtonContact sx={{ display: { xs: 'none', md: 'flex' } }}>Contact</ButtonContact>
+                        <ButtonContact sx={{ display: { xs: 'none', lg: 'flex' } }}>Contact</ButtonContact>
                     </Toolbar>
                 </Container>
             </CustomAppBar>
@@ -114,7 +114,7 @@ function Header(props) {
                         keepMounted: true,
                     }}
                     sx={{
-                        display: { xs: 'block', md: 'none' },
+                        display: { xs: 'block', lg: 'none' },
                         '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
                     }}
                 >
